@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mubarak & Maryam Wedding</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #faf8f5; padding-top: 70px; }
+    .navbar-brand img { max-height: 50px; }
+    .hero {
+    background: url('meandher.jpg') center/cover no-repeat; color: white; height: 100vh; position: relative; }
+    .hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); }
+    .hero-content { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 1rem; }
+    .countdown-container { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+    .countdown-item { background: #fff; border-radius: 50%; width: 80px; height: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .countdown-item .value { font-size: 1.2rem; font-weight: bold; color: #28a745; }
+    .countdown-item .label { font-size: 0.65rem; text-transform: uppercase; margin-top: 0.25rem; color: #666; }
+    .heart-fly { position: fixed; font-size: 1.5rem; color: #dc3545; animation: fly-away 1s ease-out forwards; pointer-events: none; z-index: 1000; }
+    @keyframes fly-away { 0% { transform: translateY(0) scale(1); opacity: 1; } 100% { transform: translateY(-150px) scale(0.5); opacity: 0; } }
+    .gallery img { width: 100%; height: auto; border-radius: .5rem; object-fit: cover; }
+    .story-section, .rsvp-section { padding: 4rem 0; }
+    .section-title { font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+    footer .footer-hr { width: 50px; height: 3px; background: #28a745; border: none; margin: 0 auto 1rem; }
+    footer p { margin-bottom: 0.25rem; }
+  </style>
+  <script src="https://cdn.emailjs.com/sdk/3.6.2/email.min.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="logo.png" alt="Wedding Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+          <li class="nav-item"><a class="nav-link" href="#love">Show Love</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center text-white">
+      <h1 class="display-4 fw-bold">Mubarak & Maryam</h1>
+      <p class="lead mb-4">Our Journey of Faith and Love</p>
+      <div id="countdown" class="countdown-container">
+        <div class="countdown-item"><span class="value" id="days">0</span><span class="label">Days</span></div>
+        <div class="countdown-item"><span class="value" id="hours">0</span><span class="label">Hours</span></div>
+        <div class="countdown-item"><span class="value" id="minutes">0</span><span class="label">Minutes</span></div>
+        <div class="countdown-item"><span class="value" id="seconds">0</span><span class="label">Seconds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section id="story" class="story-section bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4 section-title">Our Story</h2>
+      <div class="row">
+        <div class="col-12">
+          <p>We both grew up in Kano and even earned our first degrees from Bayero University, but it wasn’t until we began our master’s studies at Sharda University in India that our lives truly intertwined. One afternoon, as we walked toward the mosque, our eyes met for the first time—and in that quiet moment, we each felt something shift. Maryam lifted a silent prayer to Allah, asking that if this was meant to be, He would make our path together smooth. Though we hardly spoke at first, that prayer set everything in motion.</p>
+          <p>In the weeks that followed, we found ourselves sharing late‑night conversations and cups of chai. Our differences—her heart‑led warmth and my logic‑driven nature—became the very things that drew us closer. One playful night, we dared each other to a “24‑hour relationship game,” and what began as a joke quickly transformed into hours of honest conversation, laughter, and dreams laid bare. By January 15, 2024, we knew this was more than a game: it was the beginning of our commitment.</p>
+          <p>As our bond deepened, we faced the usual misunderstandings and the weight of studying far from home, yet we always returned to the faith that had sparked our first meeting. When we finished our coursework and research, we flew back to Nigeria at the end of December 2024, hearts full and hopeful. On February 2, 2025, we became engaged—our families rejoiced, and in each other’s eyes we saw the promise of a lifetime.</p>
+          <p>Inspired by Maryam’s gentle teaching, I wrote my first non‑technical article, “Breaking the Robot Mindset: A Personal Journey from Logic to Emotion,” celebrating how love had opened my heart. Now, as we plan our wedding on October 26, 2025 in Kano State, we thank Allah for every step of our journey, confident that the trials we’ve overcome have only strengthened our love. We look forward to a future built on faith, patience, and the promise of shared Jannah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container my-5 gallery">
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4"><img src="photo (1).jpg" alt="Photo 1" loading="lazy"></div>
+      <div class="col-sm-6 col-md-4"><img src="photo (2) .jpg" alt="Photo 2" loading="lazy"></div>
+      <div class="col-sm-6 col-md-4"><img src="photo.jpg" alt="Photo 3" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="rsvp-section">
+    <div class="container">
+      <h2 class="text-center mb-4 section-title">RSVP</h2>
+      <form id="rsvp-form" class="row g-3 justify-content-center">
+        <div class="col-12 col-md-4">
+          <input type="text" class="form-control form-control-lg" id="rsvp-name" placeholder="Your Name" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="email" class="form-control form-control-lg" id="rsvp-email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12 col-md-8 text-center">
+          <button type="submit" class="btn btn-success btn-lg px-5">Send RSVP</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rsvpModalLabel">Thank You!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Thank you for your RSVP! We will send the detailed invitation via mail.</div>
+          <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Show Love -->
+  <section id="love" class="text-center my-5">
+    <button id="love-btn" class="btn btn-danger btn-lg rounded-pill love-btn">❤ Show Love (<span id="love-count">0</span>)</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light">
+    <hr class="footer-hr">
+    <p>Main Venue: Kano State, Nigeria. Details to follow.</p>
+    <p class="text-muted">&copy; 2025 Mubark & Maryam</p>
+  </footer>
+
+  <!-- Bootstrap & Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      if (window.emailjs) emailjs.init('oCaANqcaMcDQOSrT2');
+      const eventDate = new Date('October 26, 2025 10:00:00');
+      function updateCountdown() {
+        const now = new Date(); const diff = eventDate - now;
+        const daysEl = document.getElementById('days'), hoursEl = document.getElementById('hours');
+        const minutesEl = document.getElementById('minutes'), secondsEl = document.getElementById('seconds');
+        if (diff <= 0) { clearInterval(timerInterval); [daysEl, hoursEl, minutesEl, secondsEl].forEach(el => el.innerText = '0'); return; }
+        const days = Math.floor(diff / 86400000), hrs = Math.floor((diff % 86400000) / 3600000);
+        const mins = Math.floor((diff % 3600000) / 60000), secs = Math.floor((diff % 60000) / 1000);
+        daysEl.innerText = days; hoursEl.innerText = hrs; minutesEl.innerText = mins; secondsEl.innerText = secs;
+      }
+      const timerInterval = setInterval(updateCountdown, 1000); updateCountdown();
+      const loveBtn = document.getElementById('love-btn'); let loved = sessionStorage.getItem('loved')==='true';
+      let count = parseInt(localStorage.getItem('loveCount')||'0'); document.getElementById('love-count').innerText = count;
+      if(loved) loveBtn.disabled=true;
+      loveBtn.addEventListener('click', e=>{ if(loved) return; count++; loved=true; sessionStorage.setItem('loved','true'); localStorage.setItem('loveCount',count);
+        document.getElementById('love-count').innerText=count; loveBtn.disabled=true;
+        const rect=loveBtn.getBoundingClientRect(), heart=document.createElement('span'); heart.className='heart-fly';
+        heart.style.left=`${rect.left+rect.width/2-8}px`; heart.style.top=`${rect.top-20}px`; heart.innerText='❤'; document.body.appendChild(heart);
+        heart.addEventListener('animationend',()=>heart.remove()); });
+      document.getElementById('rsvp-form').addEventListener('submit',function(e){ e.preventDefault(); const name=document.getElementById('rsvp-name').value;
+        const email=document.getElementById('rsvp-email').value; if(window.emailjs){ emailjs.send('service_xxx','template_xxx',{
+          to_email:'mandmwedding@gmail.com',from_name:name,from_email:email,message:`${name} has RSVPed.`}).then(()=>{ this.reset(); new bootstrap.Modal(document.getElementById('rsvpModal')).show(); },()=>{ alert('Oops, something went wrong.'); }); }});
+    });
+  </script>
+</body>
+</html>
